@@ -1,0 +1,19 @@
+spring:
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/db?useSSL=false
+    username: root
+    password: admin
+  cloud:
+    aws:
+      endpoint: http://localhost:4566
+      region:
+        static: eu-west-1
+      credentials:
+        access-key: AKIAIOSFODNN7EXAMPLE
+        secret-key: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+server:
+  port: 7001
+enricher-api:
+  token: BQBlWWWwrY72diOwWuT8YsgsIkCH5YxrCVBepkVTGoVjAKLzxkMuWokDllm4dm0p6ctPXalhCt9lvKAkljkSnm8gEpuREjGuibGktohWj_SscLgxVRE
+file-api:
+  url: http://localhost:7000/files

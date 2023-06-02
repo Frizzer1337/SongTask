@@ -1,0 +1,22 @@
+spring:
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/db?useSSL=false
+    username: root
+    password: admin
+  cloud:
+    aws:
+      region:
+        static: eu-west-1
+      credentials:
+        access-key: AKIAIOSFODNN7EXAMPLE
+        secret-key: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+      s3:
+        path-style-access-enabled: on
+      endpoint: http://localhost:4566
+server:
+  error:
+    include-message: always
+  port: 7000
+file-api:
+  base-path: src/main/resources/songs/
+  bucket-name: song-bucket
